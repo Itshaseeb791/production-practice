@@ -8,7 +8,7 @@ app.use(express.json());
 
 
 app.get("/health", (req, res) => {
-  res.send("API running on production v2");
+  res.send("API running on production v3");
 });
 
 module.exports = app;
