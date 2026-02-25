@@ -23,4 +23,4 @@ jobs:
             cd /home/ubuntu/dummy-backend/production-practice
             git pull
             npm install
-            pm2 restart server
+            pm2 restart dummy-server
