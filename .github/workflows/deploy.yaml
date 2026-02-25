@@ -21,7 +21,6 @@ jobs:
           key: ${{ secrets.SSH_KEY }}
           script: |
             cd /home/ubuntu/dummy-backend/production-practice
-            pkill -f "node src/server.js" || true
             git pull
             npm install
-            nohup npm run dev > output.log 2>&1 &
+            pm2 restart server
